@@ -1,0 +1,15 @@
+{
+  "aboutUs": "About us",
+  "blog": "Blog",
+  "cart": "Shopping Cart",
+  "myAccount": "My Account",
+  "prop2": {
+    "title": "One soap multiple benefits",
+    "p1": "Anti Acne",
+    "p2": "Skin Brightener",
+    "p3": "Clears up hyperpigmentation",
+    "p4": "Reduces Dark Circle",
+    "p5": "Imparts radiance"
+  },
+  "shop": "Shop"
+}

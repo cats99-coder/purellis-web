@@ -1,0 +1,18 @@
+:host {
+  position: absolute;
+  top: 110%;
+  @apply bg-black p-3 text-white right-2 rounded-md;
+  animation-direction: normal;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    translate: 0 50px;
+  }
+  to {
+    opacity: 1;
+    translate: 0;
+  }
+}

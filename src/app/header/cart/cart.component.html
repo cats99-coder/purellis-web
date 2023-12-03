@@ -1,0 +1,16 @@
+<div
+  (click)="openMenu()"
+  class="flex gap-2 items-center group cursor-pointer hover:bg-white hover:text-black px-3 py-1 rounded-md"
+>
+  <img
+    ngSrc="/assets/icons/cart.png"
+    class="group-hover:invert"
+    width="30"
+    height="20"
+    alt=""
+  />
+  {{ "cart" | translate }}
+  @if(open()) {
+  <app-menu-cart></app-menu-cart>
+  }
+</div>

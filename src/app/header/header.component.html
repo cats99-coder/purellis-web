@@ -1,0 +1,26 @@
+<header class="text-black bg-white px-3 py-3 h-[8vh] min-h-min flex items-center shadow-2xl shadow-black/70">
+  <div routerLink="/" class="flex">
+    <img ngSrc="assets/purellis-xs.svg" width="30" height="40.77" alt="" />
+    <img
+      [class]="logo"
+      ngSrc="assets/purellis.png"
+      width="130"
+      height="29.68"
+      alt=""
+      priority
+    />
+  </div>
+  <nav class="grow justify-end hidden md:flex">
+    <ul class="flex items-center gap-3">
+      <ul class="flex items-center">
+        <app-nav-item routerLink="/about" label="aboutUs" />
+        <!-- <app-nav-item label="shop" /> -->
+        <!-- <app-nav-item label="blog" /> -->
+      </ul>
+      <div class="w-[2px] bg-white h-1/2"></div>
+      <app-idioma></app-idioma>
+      <app-my-account></app-my-account>
+      <app-cart></app-cart>
+    </ul>
+  </nav>
+</header>

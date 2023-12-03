@@ -1,0 +1,29 @@
+:host {
+  @apply sticky top-0 z-40 w-full;
+}
+.logo-fixed.stop {
+  @apply top-6 left-5 scale-[1] invert;
+  translate: 0 0;
+}
+.logo-fixed:not(.stop) {
+  @apply max-w-none -mt-1 origin-center scale-[2.5] md:scale-[10] top-[70vh] md:top-[50vh] left-1/2;
+  translate: -50% 0;
+  animation-name: logo-animation;
+  animation-timeline: scroll(root block);
+  animation-range: 0px 200px;
+  animation-fill-mode: both;
+}
+
+@keyframes logo-animation {
+  0% {
+    translate: -50% 0;
+  }
+  50% {
+    @apply top-6 left-1/2 scale-[1] md:scale-[1];
+    translate: -50% 0;
+  }
+  100% {
+    @apply top-6 left-5 scale-[1];
+    translate: 0 0;
+  }
+}

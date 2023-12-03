@@ -1,1 +1,57 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  display: none;
+  appearance: none;
+  background-color: transparent;
+  scrollbar-width: none;
+}
+::-webkit-scrollbar-thumb {
+  display: none;
+  background-color: transparent;
+}
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: transparent;
+  border: 0px none #fff;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3d6077;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #8dd0d8;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+  border: 0px solid #aaa;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #e4e4e4;
+}
+::-webkit-scrollbar-track:active {
+  background: #d2d2d2;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+html {
+  @apply bg-black flex flex-col min-h-[100vh] w-screen;
+}
+body {
+  @apply flex flex-col grow font-purellis h-full relative w-full;
+}
+main {
+  @apply flex flex-col grow h-full;
+}
